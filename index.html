@@ -28,10 +28,32 @@
 
   
   
+  	   <link rel="manifest" href="https://bandservices.github.io/manifest.json"
   
 </head>
 <body>
-  
+      <div id="root"></div>
+   <script src="/pwabuilder-sw.js"></script>
+
+   <script>
+       if ('serviceWorker' in navigator) {
+           window.addEventListener('load', function() {
+               navigator.serviceWorker.register('/pwabuilder-sw.js').then(function(registration) {
+                   // Registration was successful
+               console.log('ServiceWorker registration successful with scope: ', registration.scope);
+             }, function(err) {
+               // registration failed :(
+               console.log('ServiceWorker registration failed: ', err);
+             }).catch(function(err) {
+               console.log(err)
+             });
+           });
+         } else {
+           console.log('service worker is not supported');
+         }
+   </script>
+
+
   <section data-bs-version="5.1" class="menu menu2 cid-tp4yIEQwi5" once="menu" id="menu2-i">
     
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
