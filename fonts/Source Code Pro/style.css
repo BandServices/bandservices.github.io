@@ -1,0 +1,112 @@
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 200;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/200.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 300;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/300.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 500;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/500.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 600;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/600.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 700;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/700.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 800;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/800.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 900;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/900.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: regular;
+   font-display: swap;
+   font-weight: 400;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/regular.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: italic;
+   font-display: swap;
+   font-weight: 200;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/200italic.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: italic;
+   font-display: swap;
+   font-weight: 300;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/300italic.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: italic;
+   font-display: swap;
+   font-weight: 400;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/italic.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: italic;
+   font-display: swap;
+   font-weight: 500;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/500italic.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: italic;
+   font-display: swap;
+   font-weight: 600;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/600italic.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: italic;
+   font-display: swap;
+   font-weight: 700;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/700italic.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: italic;
+   font-display: swap;
+   font-weight: 800;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/800italic.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   font-style: italic;
+   font-display: swap;
+   font-weight: 900;
+   src: url('file:///E:/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/YMP%20(%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B,%20%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8%20%D0%B8%20%D1%82%D0%B4)/YMP%20Band%20Services/fonts/Source Code Pro/900italic.ttf') format('truetype');
+}
