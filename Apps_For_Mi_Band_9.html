@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои приложения для Mi Band 9</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background: #4B0082;
+            color: white;
+            overflow: hidden;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 5vw;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: clamp(1.5em, 5vw, 3em);
+            font-weight: 700;
+        }
+        h2 {
+            font-size: clamp(1em, 3vw, 1.5em);
+            font-weight: 400;
+            margin-top: 10px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background: #ff0000;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #cc0000;
+        }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.8em;
+            color: #ccc;
+        }
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    <div class="container">
+        <h1>Мои приложения для Mi Band 9</h1>
+        <h2>'В разработке'</h2>
+        <div class="button-container">
+            <a href="https://www.youtube.com/@YMP_Yuri" class="button" target="_blank">YouTube</a>
+        </div>
+    </div>
+    <div class="footer">YMP Yuri</div>
+    <script>
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+        
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        let particlesArray = [];
+        let maxParticles = window.innerWidth < 768 ? 50 : 100;
+        const connectionDistance = window.innerWidth < 768 ? 100 : 150;
+        
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.radius = 2;
+                this.speedX = (Math.random() - 0.5) * 2;
+                this.speedY = (Math.random() - 0.5) * 2;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                
+                if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = 'white';
+                ctx.fill();
+                ctx.closePath();
+            }
+        }
+        
+        function initParticles() {
+            particlesArray = [];
+            for (let i = 0; i < maxParticles; i++) {
+                particlesArray.push(new Particle());
+            }
+        }
+        
+        function connectParticles() {
+            for (let i = 0; i < particlesArray.length; i++) {
+                for (let j = i + 1; j < particlesArray.length; j++) {
+                    let dx = particlesArray[i].x - particlesArray[j].x;
+                    let dy = particlesArray[i].y - particlesArray[j].y;
+                    let distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < connectionDistance) {
+                        ctx.beginPath();
+                        ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
+                        ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
+                        ctx.strokeStyle = `rgba(255, 255, 255, ${1 - distance / connectionDistance})`;
+                        ctx.lineWidth = 1;
+                        ctx.stroke();
+                        ctx.closePath();
+                    }
+                }
+            }
+        }
+        
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particlesArray.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            connectParticles();
+            requestAnimationFrame(animate);
+        }
+        
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            maxParticles = window.innerWidth < 768 ? 50 : 100;
+            initParticles();
+        });
+        
+        initParticles();
+        animate();
+    </script>
+</body>
+</html>
